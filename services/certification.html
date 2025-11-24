@@ -63,22 +63,101 @@
       </div>
       
       <!-- Визуализация тестового стенда -->
-      <div class="hidden lg:flex justify-center items-center h-96">
-        <div class="group relative w-80 h-80">
-          <!-- Сетка-фон -->
-          <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,51,160,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,51,160,0.1)_1px,transparent_1px)] bg-[size:2rem_2rem] rounded-2xl"></div>
-          <!-- Объект тестирования -->
-<!-- Объект тестирования -->
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 bg-gradient-to-br from-gray-800 to-rosatom-dark rounded-2xl shadow-2xl flex flex-col items-center justify-center p-4 border border-rosatom-light/20">
-  <svg class="w-16 h-16 text-rosatom-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v4a1 1 0 01-1 1H4m11-5v4a1 1 0 01-1 1H9M4 11h11a1 1 0 011 1v5a1 1 0 01-1 1H4a1 1 0 01-1-1v-5a1 1 0 011-1zM4 3h16v18H4V3z"></path></svg>
-  <p class="mt-2 font-mono text-white/50 text-sm">СЗИ-14.2</p>
-</div>
-          <!-- Сканирующий луч -->
-          <div class="absolute top-0 left-0 h-full w-1 bg-rosatom-blue/50 rounded-full shadow-2xl shadow-rosatom-blue transition-all duration-3000 ease-linear animate-scan"></div>
-          <!-- Результат -->
-          <div class="absolute -bottom-4 -right-4 bg-white p-3 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <p class="font-bold text-green-600 flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Соответствует</p>
+            <!-- Визуализация "Лабораторный сканер" -->
+      <div class="hidden lg:flex justify-center items-center h-96 relative">
+        <div class="group relative w-full max-w-md h-96 flex items-center justify-center perspective-1000">
+          
+          <!-- 1. Фоновые кольца сканера (Вращаются) -->
+          <div class="absolute inset-0 flex items-center justify-center opacity-20">
+            <!-- Внешнее кольцо -->
+            <div class="w-80 h-80 border border-rosatom-blue rounded-full border-dashed animate-[spin_10s_linear_infinite]"></div>
+            <!-- Внутреннее кольцо (в другую сторону) -->
+            <div class="absolute w-64 h-64 border border-rosatom-blue rounded-full border-dotted animate-[spin_15s_linear_infinite_reverse]"></div>
           </div>
+
+          <!-- 2. Центральный объект (Устройство СЗИ) -->
+          <div class="relative z-10 transition-transform duration-500 group-hover:scale-105">
+            <!-- Тень под объектом -->
+            <div class="absolute -bottom-12 left-1/2 -translate-x-1/2 w-32 h-4 bg-black/20 blur-xl rounded-full"></div>
+            
+            <!-- SVG Устройства -->
+            <svg class="w-48 h-48 drop-shadow-2xl" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="devBody" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#334155"/> <!-- slate-700 -->
+                  <stop offset="100%" stop-color="#0f172a"/> <!-- slate-900 -->
+                </linearGradient>
+                <linearGradient id="devGlass" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2"/>
+                  <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.05"/>
+                </linearGradient>
+                 <!-- Маска для сканера -->
+                 <clipPath id="scanClip">
+                    <rect x="0" y="0" width="200" height="200">
+                       <animate attributeName="y" values="-200;200;-200" dur="4s" repeatCount="indefinite" />
+                    </rect>
+                 </clipPath>
+              </defs>
+
+              <!-- Корпус устройства -->
+              <rect x="40" y="50" width="120" height="100" rx="10" fill="url(#devBody)" stroke="#475569" stroke-width="2"/>
+              
+              <!-- Экран / Внутренности -->
+              <rect x="55" y="65" width="90" height="70" rx="4" fill="#1e293b"/>
+              
+              <!-- "Скелет" микросхемы (виден только при сканировании - эффект рентгена) -->
+              <!-- Дублируем контур и накладываем clip-path -->
+              <g clip-path="url(#scanClip)">
+                 <rect x="55" y="65" width="90" height="70" rx="4" fill="url(#devGlass)"/>
+                 <path d="M70 80 H90 M70 90 H110 M70 100 H85" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+                 <circle cx="125" cy="115" r="10" stroke="#38bdf8" stroke-width="2"/>
+                 <path d="M125 115 L135 105" stroke="#38bdf8" stroke-width="1"/>
+              </g>
+
+              <!-- Физические порты (статичные) -->
+              <circle cx="140" cy="100" r="3" fill="#64748b"/>
+              <circle cx="140" cy="115" r="3" fill="#64748b"/>
+              <rect x="55" y="160" width="90" height="4" rx="2" fill="#475569"/>
+
+              <!-- Статус индикатор -->
+              <circle cx="150" cy="60" r="3" fill="#ef4444">
+                 <animate attributeName="fill" values="#ef4444;#22c55e;#ef4444" dur="4s" repeatCount="indefinite" />
+              </circle>
+            </svg>
+          </div>
+
+          <!-- 3. Сканирующий лазер -->
+          <!-- Горизонтальная линия, движущаяся вверх-вниз -->
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-full pointer-events-none z-20">
+             <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-rosatom-blue to-transparent shadow-[0_0_15px_#3b82f6] absolute top-0 animate-[scan_4s_linear_infinite]"></div>
+          </div>
+
+          <!-- 4. Всплывающие статусы (HUD) -->
+          <div class="absolute top-10 right-10 z-30 flex flex-col gap-2">
+             <div class="bg-white/90 backdrop-blur px-3 py-1 rounded border-l-4 border-yellow-500 shadow-lg text-xs font-mono text-gray-600 translate-x-10 opacity-0 animate-[slideIn_4s_infinite_0.5s]">
+               Анализ материалов...
+             </div>
+             <div class="bg-white/90 backdrop-blur px-3 py-1 rounded border-l-4 border-blue-500 shadow-lg text-xs font-mono text-gray-600 translate-x-10 opacity-0 animate-[slideIn_4s_infinite_1.5s]">
+               Разработка методик...
+             </div>
+             <div class="bg-white/90 backdrop-blur px-3 py-1 rounded border-l-4 border-green-500 shadow-lg text-xs font-mono text-gray-600 translate-x-10 opacity-0 animate-[slideIn_4s_infinite_2.5s]">
+               Проведение испытаний...
+             </div>
+          </div>
+
+          <!-- 5. Итоговый штамп (Появляется при наведении) -->
+          <div class="absolute -bottom-6 -right-6 z-40 transition-all duration-500 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0">
+            <div class="bg-white p-4 rounded-xl shadow-2xl border border-green-100 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <div>
+                <div class="text-sm font-bold text-gray-800">Сертификат выдан</div>
+                <div class="text-xs text-green-600 font-mono">ФСТЭК / ФСБ</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
