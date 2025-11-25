@@ -40,10 +40,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       <!-- Текстовый блок (ОСТАЛСЯ БЕЗ ИЗМЕНЕНИЙ) -->
       <div>
-        <div class="inline-flex items-center px-4 py-2 bg-rosatom-blue/10 rounded-full text-rosatom-blue text-sm font-medium mb-6">
-          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-          Инновации и эффективность
-        </div>
+        
         <h1 class="text-5xl font-bold mb-6 leading-tight text-rosatom-dark">
           Разработка <span class="text-rosatom-blue">программного обеспечения</span>
         </h1>
@@ -112,327 +109,205 @@
 <div class="sticky top-0 z-30 border-b bg-white/70 sticky-subnav">
   <div class="container px-6 mx-auto">
     <nav class="flex gap-4 py-3 overflow-x-auto text-sm" aria-label="Внутренняя навигация">
-      <a class="px-3 py-2 text-gray-600 rounded-lg hover:text-rosatom-blue focus-ring scroll-link active" href="#details">Возможности</a>
+      <a class="px-3 py-2 text-gray-600 rounded-lg hover:text-rosatom-blue focus-ring scroll-link active" href="#services">Направления разработки</a>
       <a class="px-3 py-2 text-gray-600 rounded-lg hover:text-rosatom-blue focus-ring scroll-link" href="#process">Процесс</a>
       <a class="px-3 py-2 text-gray-600 rounded-lg hover:text-rosatom-blue focus-ring scroll-link" href="#stack">Технологии</a>
       <a class="px-3 py-2 text-gray-600 rounded-lg hover:text-rosatom-blue focus-ring scroll-link" href="#compliance">Соответствие</a>
-      <a class="px-3 py-2 text-gray-600 rounded-lg hover:text-rosatom-blue focus-ring scroll-link" href="#cases">Кейсы</a>
+      
       <a class="px-3 py-2 text-gray-600 rounded-lg hover:text-rosatom-blue focus-ring scroll-link" href="#faq">FAQ</a>
       <a class="js-open-modal px-3 py-2 ml-auto text-white rounded-lg bg-rosatom-blue hover:bg-rosatom-dark focus-ring" href="#brief">Оставить заявку</a>
     </nav>
   </div>
 </div>
 
-<!-- Что разрабатываем -->
-<section id="details" class="py-20 bg-white section-grid-bg">
+<!-- Что мы разрабатываем -->
+<section id="services" class="py-20 bg-white section-grid-bg">
   <div class="container px-6 mx-auto">
     <div class="mb-16 text-center">
-      <h2 class="mb-4 text-4xl font-bold text-rosatom-dark">Что разрабатываем</h2>
+      <h2 class="mb-4 text-4xl font-bold text-rosatom-dark">Что мы разрабатываем</h2>
       <p class="max-w-3xl mx-auto text-xl text-gray-600">
-        Web и Desktop‑приложения, интеграции и миграции. Работаем на ваших или наших серверах, без внешних сервисов. Если не нашли нужное — адаптируем решение под задачу.
+        Четыре ключевых направления с фокусом на безопасность и надежность.
       </p>
     </div>
 
-    <!-- Сетка с направлениями -->
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <!-- Web и микросервисы -->
-      <div class="p-8 transition-all transform shadow-lg service-card group rounded-2xl hover:shadow-2xl hover:-translate-y-2">
+    <!-- Сетка с направлениями (Сделал 2 колонки для симметрии 4-х блоков) -->
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
+      
+      <!-- 1. Десктоп -->
+      <div class="p-8 transition-all transform shadow-lg service-card group rounded-2xl hover:shadow-2xl hover:-translate-y-2 bg-white">
         <div class="relative flex items-center justify-center w-16 h-16 mb-6 overflow-hidden bg-gradient-to-br from-rose-500 via-pink-500 to-fuchsia-500 rounded-2xl shadow-lg ring-1 ring-black/10">
-  <div class="absolute inset-0 opacity-60 bg-[radial-gradient(120%_100%_at_0%_0%,rgba(255,255,255,0.55),transparent_55%)]"></div>
-          <svg class="relative w-9 h-9" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <rect x="3" y="5" width="18" height="10" rx="2" stroke="white" stroke-width="1.6"/>
-            <path d="M7 9h6M7 12h10" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <h3 class="mb-3 text-xl font-semibold text-rosatom-dark">Web‑платформы и сервисы</h3>
-        <p class="mb-4 text-gray-600">
-          B2B/B2E системы, REST/gRPC API, роли и доступы, наблюдаемость и отказоустойчивость. Проектируем под рост нагрузки.
-        </p>
-      </div>
-
-      <!-- Десктоп -->
-      <div class="p-8 transition-all transform shadow-lg service-card rounded-2xl hover:shadow-2xl hover:-translate-y-2">
-        <div class="relative flex items-center justify-center w-16 h-16 mb-6 overflow-hidden bg-gradient-to-br from-emerald-600 via-green-500 to-lime-400 rounded-2xl shadow-lg ring-1 ring-black/10">
-  <div class="absolute inset-0 opacity-60 bg-[radial-gradient(120%_100%_at_0%_0%,rgba(255,255,255,0.55),transparent_55%)]"></div>
-          <svg class="relative w-9 h-9" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <rect x="3" y="5" width="18" height="11" rx="2" stroke="white" stroke-width="1.6"/>
-            <path d="M8 19h8M12 16v3" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <h3 class="mb-3 text-xl font-semibold text-rosatom-dark">Десктоп‑приложения</h3>
-        <p class="mb-4 text-gray-600">
-          Astra Linux, ALT, РЕД ОС и Windows. WPF/WinUI/Avalonia, офлайн‑режимы, работа с периферией, интеграция с СЗИ.
-        </p>
-      </div>
-
-      <!-- Интеграции -->
-      <div class="p-8 transition-all transform shadow-lg service-card rounded-2xl hover:shadow-2xl hover:-translate-y-2">
-        <div class="relative flex items-center justify-center w-16 h-16 mb-6 overflow-hidden bg-gradient-to-br from-purple-500 to-fuchsia-500 rounded-2xl shadow-lg ring-1 ring-black/10">
           <div class="absolute inset-0 opacity-60 bg-[radial-gradient(120%_100%_at_0%_0%,rgba(255,255,255,0.55),transparent_55%)]"></div>
-          <svg class="relative w-9 h-9" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M5 12h14M12 5v14" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="12" cy="12" r="3.2" stroke="white" stroke-width="1.6"/>
+          <!-- Иконка Desktop -->
+          <svg class="relative w-9 h-9 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+             <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+             <line x1="8" y1="21" x2="16" y2="21"></line>
+             <line x1="12" y1="17" x2="12" y2="21"></line>
           </svg>
         </div>
-        <h3 class="mb-3 text-xl font-semibold text-rosatom-dark">Интеграции и шины данных</h3>
-        <p class="mb-4 text-gray-600">
-          ETL/ELT, 1С/ESB, AD/LDAP, внешние API, очереди и ретраи. Наблюдаемость, idempotency, dead‑letter очереди.
+        <h3 class="mb-3 text-xl font-semibold text-rosatom-dark">Десктоп-приложения для закрытых контуров</h3>
+        <p class="mb-4 text-gray-600 leading-relaxed">
+          Разработка под Windows, Linux и сертифицированный Astra Linux. Работает в изолированных сетях без доступа к интернету. Полная автономность и независимость от внешних сервисов.
         </p>
+        <!-- Результат (стилизован отдельно) -->
+        <div class="inline-flex items-center px-3 py-1.5 rounded-lg bg-rose-50 text-rose-700 text-sm font-medium mt-auto">
+          → Защита конфиденциальных данных
+        </div>
       </div>
 
-      <!-- Миграция -->
-      <div class="p-8 transition-all transform shadow-lg service-card rounded-2xl hover:shadow-2xl hover:-translate-y-2">
-        <div class="relative flex items-center justify-center w-16 h-16 mb-6 overflow-hidden bg-gradient-to-br from-emerald-500 via-emerald-400 to-teal-500 rounded-2xl shadow-lg ring-1 ring-black/10">
-  <div class="absolute inset-0 opacity-60 bg-[radial-gradient(120%_100%_at_0%_0%,rgba(255,255,255,0.55),transparent_55%)]"></div>
-          <svg class="relative w-9 h-9" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M8 7h8M8 12h8M8 17h8" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M4 12l3-3m-3 3l3 3M20 12l-3-3m3 3l-3 3" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
+      <!-- 2. Веб-платформы -->
+      <div class="p-8 transition-all transform shadow-lg service-card group rounded-2xl hover:shadow-2xl hover:-translate-y-2 bg-white">
+        <div class="relative flex items-center justify-center w-16 h-16 mb-6 overflow-hidden bg-gradient-to-br from-blue-500 via-cyan-500 to-teal-400 rounded-2xl shadow-lg ring-1 ring-black/10">
+          <div class="absolute inset-0 opacity-60 bg-[radial-gradient(120%_100%_at_0%_0%,rgba(255,255,255,0.55),transparent_55%)]"></div>
+          <!-- Иконка Web -->
+          <svg class="relative w-9 h-9 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
           </svg>
         </div>
-        <h3 class="mb-3 text-xl font-semibold text-rosatom-dark">Миграция и импортозамещение</h3>
-        <p class="mb-4 text-gray-600">
-          Переезд на Astra/ALT/РЕД ОС, замена проприетарных зависимостей, сохранение UX и функциональности.
+        <h3 class="mb-3 text-xl font-semibold text-rosatom-dark">Веб-платформы и корпоративные порталы</h3>
+        <p class="mb-4 text-gray-600 leading-relaxed">
+          Личные кабинеты, CRM-системы, документооборот. Интеграция с 1С, LDAP, Active Directory. Адаптивный интерфейс для работы с любого устройства.
         </p>
+        <div class="inline-flex items-center px-3 py-1.5 rounded-lg bg-cyan-50 text-cyan-700 text-sm font-medium mt-auto">
+          → Автоматизация рутинных процессов до 70%
+        </div>
       </div>
 
-      <!-- Закрытая информация -->
-      <div class="p-8 transition-all transform shadow-lg service-card rounded-2xl hover:shadow-2xl hover:-translate-y-2">
+      <!-- 3. Защищенные системы -->
+      <div class="p-8 transition-all transform shadow-lg service-card group rounded-2xl hover:shadow-2xl hover:-translate-y-2 bg-white">
+        <div class="relative flex items-center justify-center w-16 h-16 mb-6 overflow-hidden bg-gradient-to-br from-emerald-600 via-green-500 to-lime-400 rounded-2xl shadow-lg ring-1 ring-black/10">
+          <div class="absolute inset-0 opacity-60 bg-[radial-gradient(120%_100%_at_0%_0%,rgba(255,255,255,0.55),transparent_55%)]"></div>
+          <!-- Иконка Lock -->
+          <svg class="relative w-9 h-9 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </div>
+        <h3 class="mb-3 text-xl font-semibold text-rosatom-dark">Защищенные системы обмена данными</h3>
+        <p class="mb-4 text-gray-600 leading-relaxed">
+          Криптография по ГОСТ, электронная подпись, двухфакторная аутентификация. Соответствие требованиям 152-ФЗ, ФСТЭК, ФСБ. Аудит всех операций с данными.
+        </p>
+        <div class="inline-flex items-center px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-sm font-medium mt-auto">
+          → Безопасность персональных данных
+        </div>
+      </div>
+
+      <!-- 4. Автоматизация -->
+      <div class="p-8 transition-all transform shadow-lg service-card group rounded-2xl hover:shadow-2xl hover:-translate-y-2 bg-white">
         <div class="relative flex items-center justify-center w-16 h-16 mb-6 overflow-hidden bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl shadow-lg ring-1 ring-black/10">
           <div class="absolute inset-0 opacity-60 bg-[radial-gradient(120%_100%_at_0%_0%,rgba(255,255,255,0.55),transparent_55%)]"></div>
-          <svg class="relative w-9 h-9" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M12 3l7 4v5c0 5-4 8-7 9-3-1-7-4-7-9V7l7-4z" stroke="white" stroke-width="1.6" fill="white" fill-opacity=".08" stroke-linejoin="round"/>
-            <rect x="9" y="12" width="6" height="5" rx="1.2" fill="white" fill-opacity=".15" stroke="white" stroke-width="1.6"/>
+          <!-- Иконка Settings/Gears -->
+          <svg class="relative w-9 h-9 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
           </svg>
         </div>
-        <h3 class="mb-3 text-xl font-semibold text-rosatom-dark">ПО для закрытой информации</h3>
-        <p class="mb-4 text-gray-600">
-          Криптография, контроль доступа, журналирование. Интеграция сертифицированных СЗИ и подготовка к проверкам.
+        <h3 class="mb-3 text-xl font-semibold text-rosatom-dark">Автоматизация и интеграции</h3>
+        <p class="mb-4 text-gray-600 leading-relaxed">
+          Связываем разрозненные системы, настраиваем обмен данными. REST API, очереди сообщений, настройка workflow. Синхронизация в реальном времени.
         </p>
+        <div class="inline-flex items-center px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 text-sm font-medium mt-auto">
+          → Экономия времени сотрудников на 40%
+        </div>
       </div>
 
-      <!-- Автоматизация -->
-      <div class="p-8 transition-all transform shadow-lg service-card group rounded-2xl hover:shadow-2xl hover:-translate-y-2">
-        <div class="relative flex items-center justify-center w-16 h-16 mb-6 overflow-hidden bg-gradient-to-br from-rosatom-blue to-rosatom-light rounded-2xl shadow-lg ring-1 ring-black/10">
-          <div class="absolute inset-0 opacity-60 bg-[radial-gradient(120%_100%_at_0%_0%,rgba(255,255,255,0.55),transparent_55%)]"></div>
-          <svg class="relative w-9 h-9" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <rect x="3.5" y="4" width="6.5" height="4.5" rx="1.2" fill="white" fill-opacity=".15" stroke="white" stroke-opacity=".95" stroke-width="1.6" />
-            <rect x="14" y="4" width="6.5" height="4.5" rx="1.2" fill="white" fill-opacity=".15" stroke="white" stroke-opacity=".95" stroke-width="1.6" />
-            <rect x="9" y="15.5" width="6" height="4.5" rx="1.2" fill="white" fill-opacity=".15" stroke="white" stroke-opacity=".95" stroke-width="1.6" />
-            <path d="M10 6h4" stroke="white" stroke-width="1.6" stroke-linecap="round" />
-            <path d="M12 8v6" stroke="white" stroke-width="1.6" stroke-linecap="round" />
-          </svg>
-        </div>
-        <h3 class="mb-3 text-xl font-semibold text-rosatom-dark">Автоматизация бизнес‑процессов</h3>
-        <p class="mb-4 text-gray-600">
-          Внутренние сервисы, workflow и согласования, роли и маршрутизация задач, журналирование и аудиты.
-        </p>
-      </div>
     </div>
-
-    <!-- Безопасность -->
-    <!-- Безопасность — по умолчанию (обновленный блок) -->
-<div class="relative mt-20 rounded-3xl border bg-white/70 shadow-xl backdrop-blur-sm overflow-hidden">
-  <!-- Декоративный фон -->
-  <div aria-hidden="true" class="absolute inset-0 -z-10 pointer-events-none">
-    <div class="absolute inset-0 bg-[radial-gradient(60%_80%_at_100%_0%,rgba(16,101,237,0.10),transparent_60%),radial-gradient(60%_80%_at_0%_100%,rgba(59,130,246,0.08),transparent_60%)]"></div>
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:3rem_3rem] opacity-30 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_100%)]"></div>
-  </div>
-
-  <div class="relative p-6 sm:p-8 lg:p-10">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
-      <!-- Левая колонка -->
-      <div class="lg:col-span-1">
-        <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-rosatom-blue to-rosatom-light text-white shadow-lg ring-1 ring-black/10 mb-4">
-          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-            <path d="M12 3l7 4v5c0 5-4 8-7 9-3-1-7-4-7-9V7l7-4z" stroke-width="1.8" stroke-linejoin="round"/>
-            <path d="M9.5 12.5l2 2 3.5-3.5" stroke-width="1.8" stroke-linecap="round" />
-          </svg>
-        </div>
-        <h3 class="mb-3 text-2xl font-bold text-rosatom-dark">Безопасность — по умолчанию</h3>
-        <p class="text-gray-600">Secure SDLC, анализ угроз, SAST/DAST, SBOM, подпись артефактов и контроль цепочки поставки. Все инструменты — on‑prem.</p>
-      </div>
-
-      <!-- Правая колонка -->
-      <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
-          <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-rosatom-blue via-rosatom-light to-rosatom-blue opacity-70"></div>
-          <div class="flex items-start gap-4">
-            <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 rounded-xl bg-rosatom-blue/10 text-rosatom-blue ring-1 ring-rosatom-blue/20">
-              <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <div>
-              <div class="mb-1 font-semibold">Threat Modeling</div>
-              <div class="text-sm text-gray-600">STRIDE, шаблоны злоупотреблений, контроль рисков на этапе архитектуры.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
-          <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-rosatom-blue via-rosatom-light to-rosatom-blue opacity-70"></div>
-          <div class="flex items-start gap-4">
-            <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 rounded-xl bg-rosatom-blue/10 text-rosatom-blue ring-1 ring-rosatom-blue/20">
-              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-              </svg>
-            </div>
-            <div>
-              <div class="mb-1 font-semibold">SAST/DAST + Code Review</div>
-              <div class="text-sm text-gray-600">SonarQube, OWASP ZAP, секрет‑скан, проверка зависимостей и policy‑checks перед merge.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
-          <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-rosatom-blue via-rosatom-light to-rosatom-blue opacity-70"></div>
-          <div class="flex items-start gap-4">
-            <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 rounded-xl bg-rosatom-blue/10 text-rosatom-blue ring-1 ring-rosatom-blue/20">
-              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17l3-3m0 0l3-3m-3 3l-3-3m3 3v6" />
-              </svg>
-            </div>
-            <div>
-              <div class="mb-1 font-semibold">CI/CD и подпись</div>
-              <div class="text-sm text-gray-600">On‑prem GitLab CI, Nexus/Harbor, SBOM (CycloneDX), подпись релизов (GPG/Cosign), отслеживание цепочки поставки.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white/80 p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
-          <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-rosatom-blue via-rosatom-light to-rosatom-blue opacity-70"></div>
-          <div class="flex items-start gap-4">
-            <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 rounded-xl bg-rosatom-blue/10 text-rosatom-blue ring-1 ring-rosatom-blue/20">
-              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
-              </svg>
-            </div>
-            <div>
-              <div class="mb-1 font-semibold">Аттестация и внедрение СЗИ</div>
-              <div class="text-sm text-gray-600">Интегрируем сертифицированные СЗИ и готовим материалы для оценки соответствия.</div>
-            </div>
-          </div>
-        </div>
-      </div><!-- /Правая колонка -->
-    </div>
-  </div>
-</div>
   </div>
 </section>
 
-<!-- Процесс -->
+<!-- Как мы работаем (Процесс) -->
 <section id="process" class="relative overflow-hidden py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50">
   <!-- декор: сетка + мягкие градиентные блики -->
   <div class="pointer-events-none absolute inset-0">
     <div class="grid-pattern absolute inset-0 opacity-15"></div>
-    <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-rosatom-blue/20 blur-3xl"></div>
-    <div class="absolute -bottom-32 -left-24 h-72 w-72 rounded-full bg-rosatom-dark/10 blur-3xl"></div>
+    <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-blue-600/20 blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-24 h-72 w-72 rounded-full bg-slate-900/10 blur-3xl"></div>
   </div>
 
   <div class="container mx-auto px-6 relative">
     <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-rosatom-dark to-rosatom-blue mb-4">
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-blue-700 mb-4">
         Как мы работаем
       </h2>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        Прозрачно. Предсказуемо. С фокусом на результат и безопасность.
+        Прозрачный процесс от идеи до запуска в production.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 auto-rows-fr">
-      <!-- 01 -->
-      <article class="card group relative rounded-2xl p-[1px] bg-gradient-to-br from-rosatom-blue/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-rosatom-blue/50 hover:via-rosatom-blue/15 hover:-translate-y-0.5">
-        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 shadow-sm ring-1 ring-slate-900/5 group-hover:shadow-xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-6 auto-rows-fr">
+      <!-- 01 Дискавери -->
+      <article class="card group relative rounded-2xl p-[1px] bg-gradient-to-br from-blue-500/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-blue-500/50 hover:via-blue-500/15 hover:-translate-y-0.5">
+        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 shadow-sm ring-1 ring-slate-900/5 group-hover:shadow-xl flex flex-col">
           <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white/70 px-3 py-1 text-xs font-medium text-slate-600 shadow-sm">
-            <span class="size-1.5 rounded-full bg-rosatom-blue/70"></span>
-            <span>Этап 01</span>
+            <span class="size-1.5 rounded-full bg-blue-600"></span>
+            <span>Этап 01 • 1-2 недели</span>
           </div>
-          <div class="text-xl font-semibold text-slate-900 mb-2">Дискавери и требования</div>
-          <p class="text-slate-600 leading-relaxed">
-            Интервью, приоритизация, NFR, карта угроз. Выход: PRD/бэклог, архитектурный черновик, план тестирования.
+          <div class="text-lg font-bold text-slate-900 mb-2">Дискавери и анализ</div>
+          <p class="text-slate-600 leading-relaxed text-sm flex-grow">
+            Интервью с ключевыми сотрудниками. Карта угроз и модель нарушителя. Требования к защите данных и уровню критичности.
           </p>
-          <div class="mt-6 h-px bg-gradient-to-r from-transparent via-rosatom-blue/30 to-transparent"></div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-blue-700">
+             → Понимаем риски
+          </div>
         </div>
       </article>
 
-      <!-- 02 -->
-      <article class="card group relative rounded-2xl p-[1px] bg-gradient-to-br from-rosatom-blue/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-rosatom-blue/50 hover:via-rosatom-blue/15 hover:-translate-y-0.5">
-        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 shadow-sm ring-1 ring-slate-900/5 group-hover:shadow-xl">
+      <!-- 02 Проектирование -->
+      <article class="card group relative rounded-2xl p-[1px] bg-gradient-to-br from-blue-500/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-blue-500/50 hover:via-blue-500/15 hover:-translate-y-0.5">
+        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 shadow-sm ring-1 ring-slate-900/5 group-hover:shadow-xl flex flex-col">
           <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white/70 px-3 py-1 text-xs font-medium text-slate-600 shadow-sm">
-            <span class="size-1.5 rounded-full bg-rosatom-blue/70"></span>
-            <span>Этап 02</span>
+            <span class="size-1.5 rounded-full bg-blue-600"></span>
+            <span>Этап 02 • 2-3 недели</span>
           </div>
-          <div class="text-xl font-semibold text-slate-900 mb-2">Проектирование и UX</div>
-          <p class="text-slate-600 leading-relaxed">
-            Прототипы, UX‑флоу, ADR, чек‑листы безопасности, согласование KPI и DoD.
+          <div class="text-lg font-bold text-slate-900 mb-2">Прототип и ТЗ</div>
+          <p class="text-slate-600 leading-relaxed text-sm flex-grow">
+            Интерактивный прототип в Figma. Согласование архитектуры и стека. Детальное ТЗ с учетом требований безопасности.
           </p>
-          <div class="mt-6 h-px bg-gradient-to-r from-transparent via-rosatom-blue/30 to-transparent"></div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-blue-700">
+             → Визуализация результата
+          </div>
         </div>
       </article>
 
-      <!-- 03 -->
-      <article class="card group relative rounded-2xl p-[1px] bg-gradient-to-br from-rosatom-blue/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-rosatom-blue/50 hover:via-rosatom-blue/15 hover:-translate-y-0.5">
-        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 shadow-sm ring-1 ring-slate-900/5 group-hover:shadow-xl">
+      <!-- 03 Разработка -->
+      <article class="card group relative rounded-2xl p-[1px] bg-gradient-to-br from-blue-500/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-blue-500/50 hover:via-blue-500/15 hover:-translate-y-0.5">
+        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 shadow-sm ring-1 ring-slate-900/5 group-hover:shadow-xl flex flex-col">
           <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white/70 px-3 py-1 text-xs font-medium text-slate-600 shadow-sm">
-            <span class="size-1.5 rounded-full bg-rosatom-blue/70"></span>
-            <span>Этап 03</span>
+            <span class="size-1.5 rounded-full bg-blue-600"></span>
+            <span>Этап 03 • 2-4 месяца</span>
           </div>
-          <div class="text-xl font-semibold text-slate-900 mb-2">Разработка и CI/CD</div>
-          <p class="text-slate-600 leading-relaxed">
-            Git‑flow, code review, SAST/DAST, nightly сборки, отчеты по метрикам и рискам (on‑prem).
+          <div class="text-lg font-bold text-slate-900 mb-2">Разработка и QA</div>
+          <p class="text-slate-600 leading-relaxed text-sm flex-grow">
+            Еженедельные демо. Code review, автотесты. Регулярное тестирование на уязвимости (SAST/DAST).
           </p>
-          <div class="mt-6 h-px bg-gradient-to-r from-transparent via-rosatom-blue/30 to-transparent"></div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-blue-700">
+             → Прозрачность и контроль
+          </div>
         </div>
       </article>
 
-      <!-- 04 -->
-      <article class="card group relative rounded-2xl p-[1px] bg-gradient-to-br from-rosatom-blue/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-rosatom-blue/50 hover:via-rosatom-blue/15 hover:-translate-y-0.5">
-        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 shadow-sm ring-1 ring-slate-900/5 group-hover:shadow-xl">
+      <!-- 04 Внедрение -->
+      <article class="card group relative rounded-2xl p-[1px] bg-gradient-to-br from-blue-500/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-blue-500/50 hover:via-blue-500/15 hover:-translate-y-0.5">
+        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 shadow-sm ring-1 ring-slate-900/5 group-hover:shadow-xl flex flex-col">
           <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white/70 px-3 py-1 text-xs font-medium text-slate-600 shadow-sm">
-            <span class="size-1.5 rounded-full bg-rosatom-blue/70"></span>
-            <span>Этап 04</span>
+            <span class="size-1.5 rounded-full bg-blue-600"></span>
+            <span>Этап 04 • 1-2 месяца</span>
           </div>
-          <div class="text-xl font-semibold text-slate-900 mb-2">Тестирование</div>
-          <p class="text-slate-600 leading-relaxed">
-            Unit/UI/интеграционные, нагрузочные, бэкап/restore, безопасностные тесты, покрытие.
+          <div class="text-lg font-bold text-slate-900 mb-2">Аттестация и запуск</div>
+          <p class="text-slate-600 leading-relaxed text-sm flex-grow">
+            Комплект документов для ФСТЭК/ФСБ. Испытания и устранение замечаний. Обучение пользователей и старт.
           </p>
-          <div class="mt-6 h-px bg-gradient-to-r from-transparent via-rosatom-blue/30 to-transparent"></div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-blue-700">
+             → Система готова
+          </div>
         </div>
       </article>
 
-      <!-- 05 -->
-      <article class="card group relative rounded-2xl p-[1px] bg-gradient-to-br from-rosatom-blue/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-rosatom-blue/50 hover:via-rosatom-blue/15 hover:-translate-y-0.5">
-        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 shadow-sm ring-1 ring-slate-900/5 group-hover:shadow-xl">
-          <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white/70 px-3 py-1 text-xs font-medium text-slate-600 shadow-sm">
-            <span class="size-1.5 rounded-full bg-rosatom-blue/70"></span>
-            <span>Этап 05</span>
-          </div>
-          <div class="text-xl font-semibold text-slate-900 mb-2">Внедрение</div>
-          <p class="text-slate-600 leading-relaxed">
-            Релиз, миграции, blue‑green/canary, обучение, эксплуатационная документация.
-          </p>
-          <div class="mt-6 h-px bg-gradient-to-r from-transparent via-rosatom-blue/30 to-transparent"></div>
-        </div>
-      </article>
-
-      <!-- 06 -->
-      <article class="card group relative rounded-2xl p-[1px] bg-gradient-to-br from-rosatom-blue/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-rosatom-blue/50 hover:via-rosatom-blue/15 hover:-translate-y-0.5">
-        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 shadow-sm ring-1 ring-slate-900/5 group-hover:shadow-xl">
-          <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-slate-200/70 bg-white/70 px-3 py-1 text-xs font-medium text-slate-600 shadow-sm">
-            <span class="size-1.5 rounded-full bg-rosatom-blue/70"></span>
-            <span>Этап 06</span>
-          </div>
-          <div class="text-xl font-semibold text-slate-900 mb-2">Поддержка и развитие</div>
-          <p class="text-slate-600 leading-relaxed">
-            SLA/SLO, мониторинг, патчи безопасности, roadmap развития, регулярные демо.
-          </p>
-          <div class="mt-6 h-px bg-gradient-to-r from-transparent via-rosatom-blue/30 to-transparent"></div>
-        </div>
-      </article>
     </div>
 
     <div class="text-center mt-16">
-      <a href="#brief" class="js-open-modal inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-rosatom-blue to-rosatom-dark text-white px-8 py-4 font-semibold shadow-lg shadow-rosatom-blue/20 transition-all hover:shadow-xl hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-rosatom-blue">
+      <a href="#brief" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-slate-800 text-white px-8 py-4 font-semibold shadow-lg shadow-blue-600/20 transition-all hover:shadow-xl hover:-translate-y-0.5">
         Запросить план проекта
         <svg class="w-5 h-5 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M13 7l5 5-5 5M6 12h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -647,112 +522,7 @@
   </div>
 </section>
 
-<!-- Кейсы -->
-<section id="cases" class="relative overflow-hidden py-24 bg-gradient-to-b from-white via-slate-50 to-white section-grid-bg">
-  <!-- декор: сетка + мягкие блики -->
-  <div class="pointer-events-none absolute inset-0">
-    <div class="grid-pattern absolute inset-0 opacity-15"></div>
-    <div class="absolute -top-24 -right-28 h-72 w-72 rounded-full bg-rosatom-blue/10 blur-3xl"></div>
-    <div class="absolute -bottom-28 -left-24 h-72 w-72 rounded-full bg-rosatom-dark/10 blur-3xl"></div>
-  </div>
 
-  <div class="container mx-auto px-6 relative">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-rosatom-dark to-rosatom-blue mb-4">
-        Кейсы и результаты
-      </h2>
-      <p class="text-xl text-gray-600">
-        Без раскрытия заказчиков. Метрики, которые важны бизнесу и безопасности.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 auto-rows-fr">
-      <!-- Card 1 -->
-      <article class="card tilt-hover group relative rounded-2xl p-[1px] bg-gradient-to-br from-rosatom-blue/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-rosatom-blue/50 hover:via-rosatom-blue/15 hover:-translate-y-0.5">
-        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 ring-1 ring-slate-900/5 shadow-sm group-hover:shadow-xl">
-          <div class="flex items-start justify-between gap-4 mb-2">
-            <div class="text-sm text-gray-600 inline-flex items-center gap-2 rounded-full px-3 py-1 bg-white/70 ring-1 ring-slate-200 shadow-sm">
-              Web‑платформа
-            </div>
-            <span aria-hidden="true" class="shrink-0 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-rosatom-blue/10 ring-1 ring-rosatom-blue/20 shadow-inner">
-              <svg class="h-5 w-5 text-rosatom-blue/80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10M12 2a15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0 4 10"/>
-              </svg>
-            </span>
-          </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-3">Единая система заявок</h3>
-          <p class="text-slate-600">RBAC, интеграции с AD/LDAP и почтой, мониторинг и алерты, отчеты для аудиторов.</p>
-          <div class="mt-6 h-px bg-gradient-to-r from-transparent via-rosatom-blue/30 to-transparent"></div>
-          <div class="mt-4 flex flex-wrap gap-2 text-sm">
-            <span class="chip inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white text-slate-700 ring-1 ring-slate-200 shadow-sm">
-              -35% TTR
-            </span>
-            <span class="chip inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white text-slate-700 ring-1 ring-slate-200 shadow-sm">
-              SLA 99.9%
-            </span>
-          </div>
-        </div>
-        <span aria-hidden="true" class="pointer-events-none absolute -top-8 -left-8 h-24 w-24 rounded-full bg-rosatom-blue/10 blur-2xl transition-all group-hover:bg-rosatom-blue/20"></span>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="card tilt-hover group relative rounded-2xl p-[1px] bg-gradient-to-br from-rosatom-blue/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-rosatom-blue/50 hover:via-rosatom-blue/15 hover:-translate-y-0.5">
-        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 ring-1 ring-slate-900/5 shadow-sm group-hover:shadow-xl">
-          <div class="flex items-start justify-between gap-4 mb-2">
-            <div class="text-sm text-gray-600 inline-flex items-center gap-2 rounded-full px-3 py-1 bg-white/70 ring-1 ring-slate-200 shadow-sm">
-              Миграция на Astra
-            </div>
-            <span aria-hidden="true" class="shrink-0 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-rosatom-blue/10 ring-1 ring-rosatom-blue/20 shadow-inner">
-              <svg class="h-5 w-5 text-rosatom-blue/80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 13l4 4L19 7"/><path d="M12 3l1.5 3L17 7l-3 1-1.5 3L11 8 8 7l3-1 1-3z" opacity=".4"/>
-              </svg>
-            </span>
-          </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-3">Переезд комплекса учета</h3>
-          <p class="text-slate-600">Замена зависимостей, портирование UI, тест‑план, обучение эксплуатации. Без простоев.</p>
-          <div class="mt-6 h-px bg-gradient-to-r from-transparent via-rosatom-blue/30 to-transparent"></div>
-          <div class="mt-4 flex flex-wrap gap-2 text-sm">
-            <span class="chip inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white text-slate-700 ring-1 ring-slate-200 shadow-sm">
-              -35% CAPEX
-            </span>
-            <span class="chip inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white text-slate-700 ring-1 ring-slate-200 shadow-sm">
-              0 простоев
-            </span>
-          </div>
-        </div>
-        <span aria-hidden="true" class="pointer-events-none absolute -top-8 -left-8 h-24 w-24 rounded-full bg-rosatom-blue/10 blur-2xl transition-all group-hover:bg-rosatom-blue/20"></span>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="card tilt-hover group relative rounded-2xl p-[1px] bg-gradient-to-br from-rosatom-blue/30 via-slate-200/40 to-transparent transition-all duration-300 hover:from-rosatom-blue/50 hover:via-rosatom-blue/15 hover:-translate-y-0.5">
-        <div class="relative h-full rounded-2xl bg-white/80 backdrop-blur-xl p-6 ring-1 ring-slate-900/5 shadow-sm group-hover:shadow-xl">
-          <div class="flex items-start justify-between gap-4 mb-2">
-            <div class="text-sm text-gray-600 inline-flex items-center gap-2 rounded-full px-3 py-1 bg-white/70 ring-1 ring-slate-200 shadow-sm">
-              Десктоп + СЗИ
-            </div>
-            <span aria-hidden="true" class="shrink-0 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-rosatom-blue/10 ring-1 ring-rosatom-blue/20 shadow-inner">
-              <svg class="h-5 w-5 text-rosatom-blue/80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V7l-8-4-8 4v5c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>
-              </svg>
-            </span>
-          </div>
-          <h3 class="text-xl font-semibold text-slate-900 mb-3">Модуль защищенного обмена</h3>
-          <p class="text-slate-600">Криптография, контроль доступа, журналирование, интеграция с сертифицированными СЗИ.</p>
-          <div class="mt-6 h-px bg-gradient-to-r from-transparent via-rosatom-blue/30 to-transparent"></div>
-          <div class="mt-4 flex flex-wrap gap-2 text-sm">
-            <span class="chip inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white text-slate-700 ring-1 ring-slate-200 shadow-sm">
-              Audit‑ready
-            </span>
-            <span class="chip inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white text-slate-700 ring-1 ring-slate-200 shadow-sm">
-              Подпись релизов
-            </span>
-          </div>
-        </div>
-        <span aria-hidden="true" class="pointer-events-none absolute -top-8 -left-8 h-24 w-24 rounded-full bg-rosatom-blue/10 blur-2xl transition-all group-hover:bg-rosatom-blue/20"></span>
-      </article>
-    </div>
-  </div>
-</section>
 
 <!-- FAQ -->
 <section id="faq" class="py-20 bg-slate-50">
