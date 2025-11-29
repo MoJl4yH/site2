@@ -235,11 +235,12 @@ const startTime = performance.now();
 
 // Карта соответствия "часть URL" -> "Название темы"
 const servicesMap = {
-    'attestation': 'Аттестация',
-    'certification': 'Сертификация СЗИ',
-    'tech-protection': 'Техническая защита', // Пример для URL вроде /services/technical-protection.html
-    'pentest': 'Аудит ИБ',
-    'development': 'Разработка ПО'
+    'attestation': 'Аттестация объектов информатизации',
+    'certification': 'Сертификация средств защиты информации',
+    'tech-protection': 'Техническая защита информации', // Пример для URL вроде /services/technical-protection.html
+    'pentest': 'Аудит информационной безопасности',
+    'development': 'Разработка програмного обеспечения',
+    'information-technology': 'Информационные технологии'
 };
 
   // Show consultation modal

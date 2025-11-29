@@ -1,326 +1,765 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>О нас - Цази</title>
-  <meta name="description" content="Узнайте больше о нашей компании, миссии, ценностях и подходе к обеспечению информационной безопасности и разработке IT-решений.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="../js/tailwind-config.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="../css/custom.css" rel="stylesheet">
-</head>
-<body class="bg-white text-gray-900">
-<div id="header-placeholder"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О нас</title>
+    <meta
+      name="description"
+      content="Узнайте больше о нашей компании, миссии, ценностях и подходе к обеспечению информационной безопасности и разработке IT-решений."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../css/custom.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white text-gray-900">
+    <div id="header-placeholder"></div>
 
-<section class="bg-gray-50 py-4">
-  <div class="container mx-auto px-6">
-    <nav class="text-sm">
-      <ol class="flex items-center space-x-2">
-        <li><a href="../index.html" class="text-rosatom-blue hover:text-rosatom-light">Главная</a></li>
-        <li class="text-gray-400">/</li>
-        <li class="text-gray-600">О нас</li>
-      </ol>
-    </nav>
-  </div>
-</section>
-
-<section class="hero-bg py-12 sm:py-16 lg:py-20">
-   <!-- Фоновая сетка -->
-  <div class="absolute inset-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_100%)] opacity-50 -z-10"></div>
-  
-  <div class="container mx-auto px-6">
-    <div class="text-center max-w-3xl mx-auto">
-      <!-- Логотип -->
-      <img src="../img/logo_cazi.png" alt="АО Центр Атомзащитаинформ" class="mx-auto mb-8 h-16 sm:h-20 lg:h-24 w-auto">
-
-      <!-- Заголовок -->
-      <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 leading-tight text-rosatom-dark">
-  Ведущий поставщик услуг по защите информации<br class="md:hidden"> в <span class="text-rosatom-blue">атомной отрасли</span>
-</h1>
-<p class="text-base sm:text-lg lg:text-xl text-gray-600">
-  Мы стремимся к инновациям и совершенству, обеспечивая наших клиентов передовыми решениями и надежным сервисом.
-</p>
-    </div>
-  </div>
-</section>
-
-<section class="py-12 sm:py-16 lg:py-20 bg-gray-50">
-   <!-- Фоновая сетка (без изменений) -->
-  <div class="absolute inset-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_100%)] opacity-50 -z-10"></div>
-  
-  <div class="container mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-      <div>
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-rosatom-dark mb-4 sm:mb-6">Наша миссия</h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
-          Наша миссия — обеспечить надежную защиту информации и кибербезопасность для наших клиентов, создавая инновационные и эффективные решения, которые способствуют их устойчивому развитию и процветанию в цифровом мире. Мы стремимся быть надежным партнером, предотвращая угрозы и минимизируя риски.
-        </p>
+    <section class="bg-gray-50 py-4">
+      <div class="container mx-auto px-6">
+        <nav class="text-sm">
+          <ol class="flex items-center space-x-2">
+            <li>
+              <a
+                href="../index.html"
+                class="text-rosatom-blue hover:text-rosatom-light"
+                >Главная</a
+              >
+            </li>
+            <li class="text-gray-400">/</li>
+            <li class="text-gray-600">О нас</li>
+          </ol>
+        </nav>
       </div>
-      <div>
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-rosatom-dark mb-4 sm:mb-6">Наш подход</h2>
-        <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
-          Мы стремимся быть экспертами, к которым обращаются за решением сложных задач. Наш подход — не просто следовать трендам, а глубоко разбираться в технологиях и создавать продукты, которые действительно решают проблемы, а не просто соответствуют формальным требованиям.
-        </p>
+    </section>
+
+    <section class="hero-bg py-12 sm:py-16 lg:py-20">
+      <!-- Фоновая сетка -->
+      <div
+        class="absolute inset-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_100%)] opacity-50 -z-10"
+      ></div>
+
+      <div class="container mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto">
+          <!-- Логотип -->
+          <img
+            src="../img/logo_cazi.png"
+            alt="АО Центр Атомзащитаинформ"
+            class="mx-auto mb-8 h-16 sm:h-20 lg:h-24 w-auto"
+          />
+
+          <!-- Заголовок -->
+          <h1
+            class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 leading-tight text-rosatom-dark"
+          >
+            Ведущий поставщик услуг по защите информации<br class="md:hidden" />
+            в <span class="text-rosatom-blue">атомной отрасли</span>
+          </h1>
+          <p class="text-base sm:text-lg lg:text-xl text-gray-600">
+            Мы предоставляем профессиональные решения в области защиты
+            информации и обеспечиваем стабильное качество услуг, опираясь на
+            техническую экспертизу и практический опыт.
+          </p>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="py-12 sm:py-16 lg:py-20 bg-white">
-  <!-- Фоновая сетка -->
-  <div class="absolute inset-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_100%)] opacity-50 -z-10"></div>
-  
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-12 md:mb-16">
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-rosatom-dark mb-4">Наши ценности</h2>
-      <p class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
-        Ценности Росатома, которые мы разделяем и реализуем в своей работе.
-      </p>
-    </div>
+    <section class="py-12 sm:py-16 lg:py-20 bg-gray-50">
+      <!-- Фоновая сетка (без изменений) -->
+      <div
+        class="absolute inset-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_100%)] opacity-50 -z-10"
+      ></div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- На шаг впереди -->
-      <div class="group rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-gray-100">
-        <div class="relative w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 icon-wrapper">
-          <div class="absolute inset-0 rounded-2xl opacity-80 icon-bg bg-gradient-to-br from-sky-400 to-blue-600"></div>
-          <div class="relative w-full h-full flex items-center justify-center">
-            <svg class="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L15 5.5V11C15 12.1046 14.1046 13 13 13H11C9.89543 13 9 12.1046 9 11V5.5L12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M9 11L7 21L12 17L17 21L15 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="12" cy="8" r="1" stroke="currentColor" stroke-width="1.5"/>
-            </svg>
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <div>
+            <h2
+              class="text-2xl sm:text-3xl lg:text-4xl font-bold text-rosatom-dark mb-4 sm:mb-6"
+            >
+              Наша миссия
+            </h2>
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
+              Наша миссия — обеспечивать высокий уровень информационной
+              безопасности за счёт технической экспертизы, практических методов
+              и корректного применения нормативных требований.
+            </p>
+          </div>
+          <div>
+            <h2
+              class="text-2xl sm:text-3xl lg:text-4xl font-bold text-rosatom-dark mb-4 sm:mb-6"
+            >
+              Наш подход
+            </h2>
+            <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
+              Наш подход — опираться на техническую экспертизу, корректное
+              применение требований регуляторов и практические методы оценки
+              безопасности, обеспечивая заказчику объективные результаты и
+              прозрачный процесс выполнения работ.
+            </p>
           </div>
         </div>
-        <h3 class="text-lg sm:text-xl font-semibold mb-3 text-rosatom-dark">На шаг впереди</h3>
-        <p class="text-sm sm:text-base text-gray-600">
-          Стремление к лидерству на глобальных рынках, инновационному развитию и опережению конкурентов в технологиях и знаниях.
-        </p>
       </div>
+    </section>
 
-      <!-- Ответственность за результат -->
-      <div class="group rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-gray-100">
-        <div class="relative w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 icon-wrapper">
-          <div class="absolute inset-0 rounded-2xl opacity-80 icon-bg bg-gradient-to-br from-cyan-400 to-sky-600"></div>
-          <div class="relative w-full h-full flex items-center justify-center">
-            <svg class="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 21h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M12 21V5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M12 5L19 9L12 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+    <section class="py-12 sm:py-16 lg:py-20 bg-white">
+      <!-- Фоновая сетка -->
+      <div
+        class="absolute inset-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_100%)] opacity-50 -z-10"
+      ></div>
+
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12 md:mb-16">
+          <h2
+            class="text-2xl sm:text-3xl lg:text-4xl font-bold text-rosatom-dark mb-4"
+          >
+            Наши ценности
+          </h2>
+          <p
+            class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto"
+          >
+            Мы следуем единым корпоративным ценностям Госкорпорации "Росатом"
+            применяя их в сфере информационной безопасности.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- На шаг впереди -->
+          <div
+            class="group rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-gray-100"
+          >
+            <div
+              class="relative w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 icon-wrapper"
+            >
+              <div
+                class="absolute inset-0 rounded-2xl opacity-80 icon-bg bg-gradient-to-br from-sky-400 to-blue-600"
+              ></div>
+              <div
+                class="relative w-full h-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-300"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2L15 5.5V11C15 12.1046 14.1046 13 13 13H11C9.89543 13 9 12.1046 9 11V5.5L12 2Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 11L7 21L12 17L17 21L15 11"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="12"
+                    cy="8"
+                    r="1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold mb-3 text-rosatom-dark">
+              На шаг впереди
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600">
+              Мы опережаем развитие угроз и технологий в сфере ИБ, отслеживаем
+              новые методы атак и требования регуляторов. Постоянно развиваем
+              экспертизу, чтобы предоставлять актуальные и технически выверенные
+              решения.
+            </p>
+          </div>
+
+          <!-- Ответственность за результат -->
+          <div
+            class="group rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-gray-100"
+          >
+            <div
+              class="relative w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 icon-wrapper"
+            >
+              <div
+                class="absolute inset-0 rounded-2xl opacity-80 icon-bg bg-gradient-to-br from-cyan-400 to-sky-600"
+              ></div>
+              <div
+                class="relative w-full h-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-300"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 21h8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 21V5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 5L19 9L12 13"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold mb-3 text-rosatom-dark">
+              Ответственность за результат
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600">
+              Мы несём персональную ответственность за точность, полноту и
+              качество выполняемых работ в сфере информационной безопасности.
+              Оцениваем себя не по объёму усилий, а по достигнутому результату.
+            </p>
+          </div>
+
+          <!-- Эффективность -->
+          <div
+            class="group rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-gray-100"
+          >
+            <div
+              class="relative w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 icon-wrapper"
+            >
+              <div
+                class="absolute inset-0 rounded-2xl opacity-80 icon-bg bg-gradient-to-br from-emerald-400 to-green-600"
+              ></div>
+              <div
+                class="relative w-full h-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-300"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 17L9 11L13 15L21 7"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17 7H21V11"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold mb-3 text-rosatom-dark">
+              Эффективность
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600">
+              Мы выбираем решения, которые реально работают: технически
+              обоснованы, экономически целесообразны и учитывают риски.
+              Оптимизируем процессы, используем ресурсы рационально и добиваемся
+              результата без лишних действий.
+            </p>
+          </div>
+
+          <!-- Единая команда -->
+          <div
+            class="group rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-gray-100"
+          >
+            <div
+              class="relative w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 icon-wrapper"
+            >
+              <div
+                class="absolute inset-0 rounded-2xl opacity-80 icon-bg bg-gradient-to-br from-teal-400 to-cyan-500"
+              ></div>
+              <div
+                class="relative w-full h-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-300"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="6"
+                    r="3"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M17 19C17 16.2386 14.7614 14 12 14C9.23858 14 7 16.2386 7 19"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    cx="5"
+                    cy="9"
+                    r="2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M8.5 19C8.5 17.067 6.933 15.5 5 15.5C3.06701 15.5 1.5 17.067 1.5 19"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    cx="19"
+                    cy="9"
+                    r="2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M22.5 19C22.5 17.067 20.933 15.5 19 15.5C17.067 15.5 15.5 17.067 15.5 19"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold mb-3 text-rosatom-dark">
+              Единая команда
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600">
+              Мы работаем как единая структура, ориентированная на общий
+              результат. Наши специалисты действуют согласованно, объединяя опыт
+              и компетенции для решения задач в сфере информационной
+              безопасности.
+            </p>
+          </div>
+
+          <!-- Уважение -->
+          <div
+            class="group rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-gray-100"
+          >
+            <div
+              class="relative w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 icon-wrapper"
+            >
+              <div
+                class="absolute inset-0 rounded-2xl opacity-80 icon-bg bg-gradient-to-br from-indigo-400 to-purple-600"
+              ></div>
+              <div
+                class="relative w-full h-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-300"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 21V5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5 21H19"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2 5H22"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M4 5L8 15H2L4 5Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20 5L16 15H22L20 5Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold mb-3 text-rosatom-dark">
+              Уважение
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600">
+              Мы с уважением относимся к заказчикам, партнёрам и коллегам.
+              Соблюдаем профессиональную этику, внимательно относимся к запросам
+              и ценим отраслевой опыт, лежащий в основе современной
+              информационной безопасности.
+            </p>
+          </div>
+
+          <!-- Безопасность -->
+          <div
+            class="group rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-gray-100"
+          >
+            <div
+              class="relative w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 icon-wrapper"
+            >
+              <div
+                class="absolute inset-0 rounded-2xl opacity-80 icon-bg bg-gradient-to-br from-amber-400 to-orange-600"
+              ></div>
+              <div
+                class="relative w-full h-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-300"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 21C12 21 4 16.5 4 10V4.5L12 2L20 4.5V10C20 16.5 12 21 12 21Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 10.5L11.5 13L15 9"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold mb-3 text-rosatom-dark">
+              Безопасность
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600">
+              Мы рассматриваем безопасность как основной приоритет. Строго
+              соблюдаем требования и регламенты в области информационной
+              безопасности, исключая компромиссы и нарушения. Внимательно
+              относимся к деталям, так как именно они определяют надёжность
+              защиты.
+            </p>
           </div>
         </div>
-        <h3 class="text-lg sm:text-xl font-semibold mb-3 text-rosatom-dark">Ответственность за результат</h3>
-        <p class="text-sm sm:text-base text-gray-600">
-          Личная ответственность каждого сотрудника за вклад в достижение целей и качество своей работы.
-        </p>
       </div>
+    </section>
 
-      <!-- Эффективность -->
-      <div class="group rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-gray-100">
-        <div class="relative w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 icon-wrapper">
-          <div class="absolute inset-0 rounded-2xl opacity-80 icon-bg bg-gradient-to-br from-emerald-400 to-green-600"></div>
-          <div class="relative w-full h-full flex items-center justify-center">
-            <svg class="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 17L9 11L13 15L21 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M17 7H21V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+    <section class="py-12 sm:py-16 lg:py-20 bg-gray-50">
+      <!-- Фоновая сетка (без изменений) -->
+      <div
+        class="absolute inset-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_100%)] opacity-50 -z-10"
+      ></div>
+
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12 md:mb-16">
+          <h2
+            class="text-2xl sm:text-3xl lg:text-4xl font-bold text-rosatom-dark mb-4"
+          >
+            Наш путь
+          </h2>
+          <p
+            class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto"
+          >
+            От отраслевых задач по защите информации до комплексных проектов по
+            безопасности для государственных и коммерческих организаций — путь
+            Центра (АО Центр «Атомзащитаинформ») отражает развитие подходов к
+            информационной безопасности в стране.
+          </p>
+        </div>
+        <div class="relative max-w-4xl mx-auto">
+          <!-- ИЗМЕНЕНО: Линия теперь адаптивная -->
+          <div
+            class="absolute left-4 md:left-1/2 w-0.5 h-full bg-rosatom-blue opacity-30 md:transform md:-translate-x-1/2"
+          ></div>
+
+          <!-- ИЗМЕНЕНО: Элемент таймлайна -->
+          <div class="mb-8 flex items-center w-full md:justify-between">
+            <div class="hidden md:block order-1 w-5/12"></div>
+            <div
+              class="z-20 flex items-center order-1 bg-rosatom-blue shadow-xl w-8 h-8 rounded-full mr-2"
+            >
+              <h1 class="mx-auto font-semibold text-sm text-white">1</h1>
+            </div>
+            <div
+              class="order-1 bg-white rounded-2xl shadow-xl flex-1 md:w-5/12 px-4 py-3 md:px-6 md:py-4"
+            >
+              <p class="font-bold text-rosatom-blue text-xl md:text-2xl mb-1">
+                1991 г.
+              </p>
+              <h3 class="font-bold text-gray-800 text-lg">Основание Центра</h3>
+              <p class="text-sm text-gray-600 leading-snug">
+                Создание Центра по комплексной защите информации при Минатоме
+                СССР. Формирование отраслевой системы технической защиты
+                информации и мероприятий по противодействию иностранным
+                техническим разведкам.
+              </p>
+            </div>
+          </div>
+
+          <!-- ИЗМЕНЕНО: Элемент таймлайна -->
+          <div
+            class="mb-8 flex items-center w-full md:justify-between md:flex-row-reverse"
+          >
+            <div class="hidden md:block order-1 w-5/12"></div>
+            <div
+              class="z-20 flex items-center order-1 bg-rosatom-blue shadow-xl w-8 h-8 rounded-full ml-2"
+            >
+              <h1 class="mx-auto text-white font-semibold text-sm">2</h1>
+            </div>
+            <div
+              class="order-1 bg-white rounded-2xl shadow-xl flex-1 md:w-5/12 px-4 py-3 md:px-6 md:py-4"
+            >
+              <p class="font-bold text-rosatom-blue text-xl md:text-2xl mb-1">
+                1999 г.
+              </p>
+              <h3 class="font-bold text-gray-800 text-lg">
+                Преобразование в ГУП
+              </h3>
+              <p class="text-sm text-gray-600 leading-snug">
+                Переход Центра в статус ГУП. Сохранение функций по координации,
+                организации и контролю мер защиты информации в атомной отрасли,
+                включая разработку отраслевых требований и нормативных
+                документов.
+              </p>
+            </div>
+          </div>
+
+          <!-- ИЗМЕНЕНО: Элемент таймлайна -->
+          <div class="mb-8 flex items-center w-full md:justify-between">
+            <div class="hidden md:block order-1 w-5/12"></div>
+            <div
+              class="z-20 flex items-center order-1 bg-rosatom-blue shadow-xl w-8 h-8 rounded-full mr-2"
+            >
+              <h1 class="mx-auto font-semibold text-sm text-white">3</h1>
+            </div>
+            <div
+              class="order-1 bg-white rounded-2xl shadow-xl flex-1 md:w-5/12 px-4 py-3 md:px-6 md:py-4"
+            >
+              <p class="font-bold text-rosatom-blue text-xl md:text-2xl mb-1">
+                2006 г.
+              </p>
+              <h3 class="font-bold text-gray-800 text-lg">
+                Преобразование в ФГУП
+              </h3>
+              <p class="text-sm text-gray-600 leading-snug">
+                Расширение полномочий Центра: участие в разработке
+                государственных руководящих документов, развитие системы
+                комплексной защиты информации, поддержка предприятий отрасли в
+                выполнении требований по безопасности.
+              </p>
+            </div>
+          </div>
+
+          <!-- ИЗМЕНЕНО: Элемент таймлайна -->
+          <div
+            class="mb-8 flex items-center w-full md:justify-between md:flex-row-reverse"
+          >
+            <div class="hidden md:block order-1 w-5/12"></div>
+            <div
+              class="z-20 flex items-center order-1 bg-rosatom-blue shadow-xl w-8 h-8 rounded-full ml-2"
+            >
+              <h1 class="mx-auto font-semibold text-sm text-white">4</h1>
+            </div>
+            <div
+              class="order-1 bg-white rounded-2xl shadow-xl flex-1 md:w-5/12 px-4 py-3 md:px-6 md:py-4"
+            >
+              <p class="font-bold text-rosatom-blue text-xl md:text-2xl mb-1">
+                2019 г.
+              </p>
+              <h3 class="font-bold text-gray-800 text-lg">
+                Создание АО Центр «Атомзащитаинформ»
+              </h3>
+              <p class="text-sm text-gray-600 leading-snug">
+                Преобразование ФГУП в Акционерное общество. Центр сохраняет
+                преемственность функций и усиливает деятельность в области
+                информационной безопасности, аттестации, сертификации и
+                технической защиты информации.
+              </p>
+            </div>
+          </div>
+
+          <!-- ИЗМЕНЕНО: Элемент таймлайна -->
+          <div class="mb-8 flex items-center w-full md:justify-between">
+            <div class="hidden md:block order-1 w-5/12"></div>
+            <div
+              class="z-20 flex items-center order-1 bg-rosatom-blue shadow-xl w-8 h-8 rounded-full mr-2"
+            >
+              <h1 class="mx-auto text-white font-semibold text-sm">5</h1>
+            </div>
+            <div
+              class="order-1 bg-white rounded-2xl shadow-xl flex-1 md:w-5/12 px-4 py-3 md:px-6 md:py-4"
+            >
+              <p class="font-bold text-rosatom-blue text-xl md:text-2xl mb-1">
+                Сегодня
+              </p>
+              <h3 class="font-bold text-gray-800 text-lg">
+                Ведущая организация по ИБ в атомной отрасли
+              </h3>
+              <p class="text-sm text-gray-600 leading-snug">
+                Центр реализует комплексные проекты по обеспечению
+                информационной безопасности для государственных, отраслевых и
+                коммерческих заказчиков, обеспечивая высокий уровень компетенции
+                и устойчивость критически важных процессов.
+              </p>
+            </div>
           </div>
         </div>
-        <h3 class="text-lg sm:text-xl font-semibold mb-3 text-rosatom-dark">Эффективность</h3>
-        <p class="text-sm sm:text-base text-gray-600">
-          Рациональное использование ресурсов, совершенствование процессов и поиск оптимальных решений.
-        </p>
       </div>
+    </section>
 
-      <!-- Единая команда -->
-      <div class="group rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-gray-100">
-        <div class="relative w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 icon-wrapper">
-          <div class="absolute inset-0 rounded-2xl opacity-80 icon-bg bg-gradient-to-br from-teal-400 to-cyan-500"></div>
-          <div class="relative w-full h-full flex items-center justify-center">
-            <svg class="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="6" r="3" stroke="currentColor" stroke-width="1.5"/>
-              <path d="M17 19C17 16.2386 14.7614 14 12 14C9.23858 14 7 16.2386 7 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <circle cx="5" cy="9" r="2" stroke="currentColor" stroke-width="1.5"/>
-              <path d="M8.5 19C8.5 17.067 6.933 15.5 5 15.5C3.06701 15.5 1.5 17.067 1.5 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <circle cx="19" cy="9" r="2" stroke="currentColor" stroke-width="1.5"/>
-              <path d="M22.5 19C22.5 17.067 20.933 15.5 19 15.5C17.067 15.5 15.5 17.067 15.5 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
+    <section
+      class="gradient-rosatom text-white py-12 sm:py-16 lg:py-20 relative"
+    >
+      <div class="grid-pattern absolute inset-0 opacity-20"></div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center mb-12 md:mb-16">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+            Принципы взаимодействия с заказчиками
+          </h2>
+          <p class="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto">
+            Три ключевых принципа, на которых основана наша работа с
+            заказчиками.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div>
+            <div
+              class="w-16 h-16 sm:w-20 sm:h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 sm:w-10 sm:h-10 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold mb-2">Надежность</h3>
+            <p class="text-sm sm:text-base mb-4">
+              Мы обеспечиваем корректное и безопасное выполнение услуг на всех
+              этапах, располагая всеми необходимыми лицензиями и разрешениями
+              для работы в сфере информационной безопасности.
+            </p>
+            <a
+              href="licences.html"
+              class="font-semibold text-white border-b-2 border-dotted hover:border-solid"
+              >Лицензии &rarr;</a
+            >
+          </div>
+
+          <div>
+            <div
+              class="w-16 h-16 sm:w-20 sm:h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4 mt-4"
+            >
+              <svg
+                class="w-8 h-8 sm:w-10 sm:h-10 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 -1 24 25"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19.428 15.428a2 2 0 00-1.022-.547l-2.368-.823a2 2 0 01-1.423-1.423l-.823-2.368a2 2 0 00-3.543 0l-.823 2.368a2 2 0 01-1.423 1.423l-2.368.823a2 2 0 00-1.022.547A6.98 6.98 0 003 21c0 1.105.895 2 2 2h14c1.105 0 2-.895 2-2a6.98 6.98 0 00-1.572-5.572z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6a3 3 0 100-6 3 3 0 000 6z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold mb-2">Экспертиза</h3>
+            <p class="text-sm sm:text-base mb-4">
+              Мы анализируем поставленную задачу, выявляем актуальные угрозы и
+              формируем оптимальный набор услуг, обеспечивающий корректное и
+              обоснованное решение задач по информационной безопасности.
+            </p>
+            <a
+              href="../index.html#services"
+              class="font-semibold text-white border-b-2 border-dotted hover:border-solid"
+              >Наши услуги &rarr;</a
+            >
+          </div>
+
+          <div>
+            <div
+              class="w-16 h-16 sm:w-20 sm:h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 sm:w-10 sm:h-10 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold mb-2">Команда</h3>
+            <p class="text-sm sm:text-base mb-4">
+              Мы формируем проектные команды с нужной экспертизой и обеспечиваем
+              согласованную работу специалистов, чтобы вы получали цельное и
+              полностью выверенное решение поставленной задачи.
+            </p>
+            <a
+              href="contact.html"
+              class="font-semibold text-white border-b-2 border-dotted hover:border-solid"
+              >Обсудить ваш проект &rarr;</a
+            >
           </div>
         </div>
-        <h3 class="text-lg sm:text-xl font-semibold mb-3 text-rosatom-dark">Единая команда</h3>
-        <p class="text-sm sm:text-base text-gray-600">
-          Объединение усилий, уважение к коллегам и командный дух для достижения общих целей.
-        </p>
       </div>
+    </section>
 
-      <!-- Уважение -->
-      <div class="group rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-gray-100">
-        <div class="relative w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 icon-wrapper">
-          <div class="absolute inset-0 rounded-2xl opacity-80 icon-bg bg-gradient-to-br from-indigo-400 to-purple-600"></div>
-          <div class="relative w-full h-full flex items-center justify-center">
-            <svg class="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 21V5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M5 21H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M2 5H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M4 5L8 15H2L4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M20 5L16 15H22L20 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-        </div>
-        <h3 class="text-lg sm:text-xl font-semibold mb-3 text-rosatom-dark">Уважение</h3>
-        <p class="text-sm sm:text-base text-gray-600">
-          Уважение к коллегам, партнёрам, заказчикам, клиентам и к традициям отрасли.
-        </p>
-      </div>
+    <div id="footer-placeholder"></div>
 
-      <!-- Безопасность -->
-      <div class="group rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-gray-100">
-        <div class="relative w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-6 icon-wrapper">
-          <div class="absolute inset-0 rounded-2xl opacity-80 icon-bg bg-gradient-to-br from-amber-400 to-orange-600"></div>
-          <div class="relative w-full h-full flex items-center justify-center">
-            <svg class="w-8 h-8 sm:w-9 sm:h-9 text-white transition-transform duration-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 21C12 21 4 16.5 4 10V4.5L12 2L20 4.5V10C20 16.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M9 10.5L11.5 13L15 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-        </div>
-        <h3 class="text-lg sm:text-xl font-semibold mb-3 text-rosatom-dark">Безопасность</h3>
-        <p class="text-sm sm:text-base text-gray-600">
-          Забота о безопасности людей и окружающей среды, строгие нормы и стандарты работы.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-<section class="py-12 sm:py-16 lg:py-20 bg-gray-50">
-   <!-- Фоновая сетка (без изменений) -->
-  <div class="absolute inset-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_100%)] opacity-50 -z-10"></div>
-  
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-12 md:mb-16">
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-rosatom-dark mb-4">Наш путь</h2>
-      <p class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">От защиты гостайны до обеспечения безопасности коммерческого сектора.</p>
-    </div>
-    <div class="relative max-w-4xl mx-auto">
-      <!-- ИЗМЕНЕНО: Линия теперь адаптивная -->
-      <div class="absolute left-4 md:left-1/2 w-0.5 h-full bg-rosatom-blue opacity-30 md:transform md:-translate-x-1/2"></div>
-      
-      <!-- ИЗМЕНЕНО: Элемент таймлайна -->
-      <div class="mb-8 flex items-center w-full md:justify-between">
-        <div class="hidden md:block order-1 w-5/12"></div>
-        <div class="z-20 flex items-center order-1 bg-rosatom-blue shadow-xl w-8 h-8 rounded-full">
-          <h1 class="mx-auto font-semibold text-sm text-white">1</h1>
-        </div>
-        <div class="order-1 bg-white rounded-2xl shadow-xl flex-1 md:w-5/12 px-4 py-3 md:px-6 md:py-4">
-          <p class="font-bold text-rosatom-blue">2008</p>
-          <h3 class="font-bold text-gray-800 text-lg">Основание центра</h3>
-          <p class="text-sm text-gray-600 leading-snug">Создание в структуре Росатома для защиты критической информационной инфраструктуры отрасли.</p>
-        </div>
-      </div>
-
-      <!-- ИЗМЕНЕНО: Элемент таймлайна -->
-      <div class="mb-8 flex items-center w-full md:justify-between md:flex-row-reverse">
-        <div class="hidden md:block order-1 w-5/12"></div>
-        <div class="z-20 flex items-center order-1 bg-rosatom-blue shadow-xl w-8 h-8 rounded-full">
-          <h1 class="mx-auto text-white font-semibold text-sm">2</h1>
-        </div>
-        <div class="order-1 bg-white rounded-2xl shadow-xl flex-1 md:w-5/12 px-4 py-3 md:px-6 md:py-4">
-          <p class="font-bold text-rosatom-blue">2014</p>
-          <h3 class="font-bold text-gray-800 text-lg">Получение лицензий</h3>
-          <p class="text-sm text-gray-600 leading-snug">Получение ключевых лицензий ФСТЭК и ФСБ России, расширение компетенций по работе с гостайной.</p>
-        </div>
-      </div>
-      
-      <!-- ИЗМЕНЕНО: Элемент таймлайна -->
-      <div class="mb-8 flex items-center w-full md:justify-between">
-        <div class="hidden md:block order-1 w-5/12"></div>
-        <div class="z-20 flex items-center order-1 bg-rosatom-blue shadow-xl w-8 h-8 rounded-full">
-          <h1 class="mx-auto font-semibold text-sm text-white">3</h1>
-        </div>
-        <div class="order-1 bg-white rounded-2xl shadow-xl flex-1 md:w-5/12 px-4 py-3 md:px-6 md:py-4">
-          <p class="font-bold text-rosatom-blue">2019</p>
-          <h3 class="font-bold text-gray-800 text-lg">Выход на рынок</h3>
-          <p class="text-sm text-gray-600 leading-snug">Адаптация государственных методик защиты для крупного бизнеса, промышленности и финансового сектора.</p>
-        </div>
-      </div>
-
-      <!-- ИЗМЕНЕНО: Элемент таймлайна -->
-      <div class="mb-8 flex items-center w-full md:justify-between md:flex-row-reverse">
-        <div class="hidden md:block order-1 w-5/12"></div>
-        <div class="z-20 flex items-center order-1 bg-rosatom-blue shadow-xl w-8 h-8 rounded-full">
-          <h1 class="mx-auto text-white font-semibold text-sm">4</h1>
-        </div>
-        <div class="order-1 bg-white rounded-2xl shadow-xl flex-1 md:w-5/12 px-4 py-3 md:px-6 md:py-4">
-          <p class="font-bold text-rosatom-blue">Сегодня</p>
-          <h3 class="font-bold text-gray-800 text-lg">Технологический суверенитет</h3>
-          <p class="text-sm text-gray-600 leading-snug">Запуск направления по разработке защищенного ПО в рамках программы импортозамещения.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="gradient-rosatom text-white py-12 sm:py-16 lg:py-20 relative">
-  <div class="grid-pattern absolute inset-0 opacity-20"></div>
-  <div class="container mx-auto px-6 relative z-10">
-    <div class="text-center mb-12 md:mb-16">
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Наш подход к партнерству</h2>
-      <p class="text-base sm:text-lg lg:text-xl max-w-3xl mx-auto">Три фундаментальных принципа, на которых строится доверие наших клиентов.</p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-      
-      <div>
-        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl sm:text-2xl font-bold mb-2">Государственная надежность</h3>
-        <p class="text-sm sm:text-base mb-4">Мы применяем стандарты безопасности, разработанные для атомной отрасли, к каждому коммерческому проекту. Ваша инфраструктура будет защищена по высшему разряду.</p>
-        <a href="licences.html" class="font-semibold text-white border-b-2 border-dotted hover:border-solid">Подтверждено лицензиями &rarr;</a>
-      </div>
-      
-      <div>
-        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.368-.823a2 2 0 01-1.423-1.423l-.823-2.368a2 2 0 00-3.543 0l-.823 2.368a2 2 0 01-1.423 1.423l-2.368.823a2 2 0 00-1.022.547A6.98 6.98 0 003 21c0 1.105.895 2 2 2h14c1.105 0 2-.895 2-2a6.98 6.98 0 00-1.572-5.572z"></path>
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6a3 3 0 100-6 3 3 0 000 6z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl sm:text-2xl font-bold mb-2">Проактивная экспертиза</h3>
-        <p class="text-sm sm:text-base mb-4">Мы не просто выполняем ТЗ. Мы анализируем ваши бизнес-процессы, предвидим угрозы и предлагаем решения, которые работают на опережение, отвечая ценности «На шаг впереди».</p>
-        <a href="../index.html#services" class="font-semibold text-white border-b-2 border-dotted hover:border-solid">Наши услуги &rarr;</a>
-      </div>
-      
-      <div>
-        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-           <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl sm:text-2xl font-bold mb-2">Интегрированная команда</h3>
-        <p class="text-sm sm:text-base mb-4">Под ваш проект выделяется команда из аналитиков, инженеров и пентестеров, работающих как «Единая команда». Вы получаете комплексное решение из одних рук.</p>
-        <a href="contact.html" class="font-semibold text-white border-b-2 border-dotted hover:border-solid">Обсудить ваш проект &rarr;</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div id="footer-placeholder"></div>
-
-<script src="../components.js"></script>
-<script src="../script.js"></script>
-<script src="../js/app.js"></script>
-<script src="../js/components.js"></script>
-</body>
+    <script src="../components.js"></script>
+    <script src="../script.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/components.js"></script>
+  </body>
 </html>
